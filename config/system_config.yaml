@@ -1,0 +1,17 @@
+# System Configuration
+
+system:
+  mode: backtest  # backtest / paper / live
+  log_level: INFO
+
+data:
+  providers:
+    - longbridge
+  cache_dir: /Users/Shinji/Coding/data/cache
+  historical_dir: /Users/Shinji/Coding/data/historical
+
+risk:
+  max_position_per_stock: 0.1      # 单股最大仓位 10%
+  max_daily_loss: 0.02             # 单日最大亏损 2%
+  max_total_exposure: 0.8          # 最大总仓位 80%
+  stop_loss_default: 0.05          # 默认止损 5%
